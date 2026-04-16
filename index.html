@@ -138,9 +138,10 @@
             box-shadow: var(--shadow-lg);
         }
 
-        .bicu-badge img {
+        .bicu-logo {
             height: 20px;
-            filter: brightness(0) invert(1);
+            filter: none; /* CORREGIDO - Sin filtro para mostrar colores originales */
+            object-fit: contain;
         }
 
         .nav-links {
@@ -789,7 +790,7 @@
             background: linear-gradient(135deg, var(--bicu-blue), var(--bicu-dark));
             border-radius: 15px;
             margin: 2rem auto;
-            max-width: 400px;
+            max-width: 500px;
             box-shadow: var(--shadow-lg);
             transition: all 0.3s ease;
         }
@@ -799,14 +800,16 @@
             box-shadow: var(--shadow-xl);
         }
 
-        .bicu-footer i {
-            font-size: 1.5rem;
-            color: white;
+        .bicu-footer-logo {
+            height: 30px;
+            filter: none; /* CORREGIDO - Sin filtro para mostrar colores originales */
+            object-fit: contain;
         }
 
         .bicu-footer span {
             color: white;
             font-weight: 600;
+            font-size: 1rem;
         }
 
         .footer-bottom {
@@ -912,15 +915,20 @@
             margin: 0 auto;
         }
 
-        .institutional-logo {
-            font-size: 3rem;
+        .institutional-logo-container {
             margin-bottom: 1.5rem;
             animation: pulse 2s ease infinite;
         }
 
+        .institutional-logo {
+            height: 60px;
+            filter: none; /* CORREGIDO - Sin filtro para mostrar colores originales */
+            object-fit: contain;
+        }
+
         @keyframes pulse {
             0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
+            50% { transform: scale(1.05); }
         }
 
         .institutional-content h2 {
@@ -1227,6 +1235,7 @@
             .bicu-footer {
                 flex-direction: column;
                 gap: 0.5rem;
+                max-width: 300px;
             }
         }
 
@@ -1310,8 +1319,8 @@
                     EcoReturn
                 </a>
                 <div class="bicu-badge">
-                    <i class="fas fa-bolt"></i>
-                    Impulsado por BICU
+                    <img src="" alt="Universidad BICU" class="bicu-logo">
+                    <span>Impulsado por Universidad BICU</span>
                 </div>
             </div>
             <div class="nav-links" id="navLinks">
@@ -1715,30 +1724,30 @@
             </div>
         </section>
 
-        <!-- Institutional Section - BICU -->
+        <!-- Institutional Section - Universidad BICU -->
         <section class="institutional-section">
             <div class="institutional-content">
-                <div class="institutional-logo">
-                    <i class="fas fa-bolt"></i>
+                <div class="institutional-logo-container">
+                    <img src="" alt="Universidad BICU" class="institutional-logo">
                 </div>
-                <h2>Este proyecto es impulsado por BICU</h2>
-                <p>BICU es una organización comprometida con la innovación sostenible y el desarrollo de soluciones tecnológicas que transforman positivamente nuestro entorno.</p>
+                <h2>Este proyecto es impulsado por la Universidad BICU</h2>
+                <p>La Universidad BICU es una institución líder en innovación educativa y desarrollo sostenible, comprometida con generar soluciones tecnológicas que transformen positivamente nuestra sociedad y entorno.</p>
                 
                 <div class="bicu-features">
                     <div class="bicu-feature">
-                        <i class="fas fa-rocket"></i>
-                        <h4>Innovación</h4>
-                        <p>Lideramos proyectos tecnológicos de impacto</p>
+                        <i class="fas fa-graduation-cap"></i>
+                        <h4>Excelencia Académica</h4>
+                        <p>Formación de líderes con visión sostenible</p>
                     </div>
                     <div class="bicu-feature">
-                        <i class="fas fa-handshake"></i>
-                        <h4>Colaboración</h4>
-                        <p>Unimos empresas y usuarios para el cambio</p>
+                        <i class="fas fa-microscope"></i>
+                        <h4>Investigación</h4>
+                        <p>Desarrollo de soluciones innovadoras</p>
                     </div>
                     <div class="bicu-feature">
-                        <i class="fas fa-seedling"></i>
-                        <h4>Sostenibilidad</h4>
-                        <p>Promovemos prácticas eco-amigables</p>
+                        <i class="fas fa-hands-helping"></i>
+                        <h4>Impacto Social</h4>
+                        <p>Compromiso con la comunidad y el medio ambiente</p>
                     </div>
                 </div>
             </div>
@@ -1758,7 +1767,8 @@
                     </div>
                     <div class="business-feature">
                         <i class="fas fa-dollar-sign"></i>
-                        <p>Reduce costos de empaques hasta un 40%</p>
+                        <h3>Reduce Costos</h3>
+                        <p>Disminuye gastos en empaques hasta un 40%</p>
                     </div>
                     <div class="business-feature">
                         <i class="fas fa-leaf"></i>
@@ -1900,10 +1910,10 @@
             </div>
         </div>
         
-        <!-- BICU Footer Badge -->
+        <!-- Universidad BICU Footer Badge -->
         <div class="bicu-footer">
-            <i class="fas fa-bolt"></i>
-            <span>Impulsado por BICU</span>
+            <img src="" alt="Universidad BICU" class="bicu-footer-logo">
+            <span>Impulsado por Universidad BICU</span>
         </div>
         
         <div class="footer-bottom">
